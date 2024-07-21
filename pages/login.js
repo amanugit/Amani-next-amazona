@@ -49,6 +49,7 @@ export default function Login() {
       router.push(redirect || '/');
     } catch (err) {
       enqueueSnackbar(getError(err), { variant: 'error' });
+      console.log(err)
     }
   };
   return (
